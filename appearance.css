@@ -1,0 +1,154 @@
+/* Shared mustard accent and the optional light appearance. */
+:root{--gold:#d5a13c;--gold-bright:#f0c66d;--gold-ink:#62410c}
+.header-actions{gap:10px}.header-kicker{margin-inline-end:14px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:39px;padding:7px 12px;border:1px solid #987437;border-radius:9px;background:#382d1d;color:#f8db9a;font-size:12px;font-weight:800;white-space:nowrap}
+.theme-toggle:hover{background:#4a3820;border-color:var(--gold-bright)}
+.theme-toggle:focus-visible{outline-color:var(--gold-bright)}
+.brand-accent,.hero-copy h1 em,.center-icon{color:var(--gold-bright)}
+.eyebrow,.section-index,.question-label span,.rec-kicker,.rec-link{color:#edc779}
+.signal{background:var(--gold-bright);box-shadow:0 0 12px #e6b65b77}
+.start-button{border-color:#edc66d;background:var(--gold);color:#1d2430;box-shadow:0 6px 22px #b2782460}
+.start-button:hover{background:#ebbb5b}
+.orbit-track-inner{border-color:#d7aa58;box-shadow:0 0 18px #d6a54b70,inset 0 0 18px #d6a54b45}
+.orbit-center{border-color:#dfb65e;box-shadow:0 0 30px #c9943d54,inset 0 0 25px #d5a34a25}
+.stage-pill{color:#f4d78c;background:#3c3329;border-color:#a87b37}
+.stage-hero-glyph{color:#e5bd6d}
+.questions-panel{border-inline-start-color:#e4b659}
+.questions-panel .section-index,.questions-panel .question-label span{color:#f6d891}
+.questions-panel .option.selected{border-color:#f2c96c;background:#665337;box-shadow:0 0 0 3px #e4b65f31,inset 0 0 18px #e2b45c20}
+.questions-panel .option.selected:after{background:#f3ce79;color:#3b2d18}
+.advanced-toggle{border-color:#ba9658;color:#ffefd0}
+.recommend-card{border-color:#ad894a}
+.code-switch button.active{background:#675133;border-color:#f1ca76;box-shadow:0 0 0 2px #e8ba6630}
+.settings-summary strong{color:#f2d18a}
+.rail-button span,.motion-toggle:hover{color:#f0cb7a}
+button:focus-visible,a:focus-visible,select:focus-visible{outline-color:var(--gold-bright)}
+
+html.theme-light{color-scheme:light;--text:#1c2d38;--muted:#5d6b70;--line:#d7d7d2}
+html.theme-light body{background:radial-gradient(circle at 50% 35%,#f7e9c9 0,#f6f3eb 42%,#efeee9 100%);color:#1c2d38}
+html.theme-light .ambient{opacity:.08}
+html.theme-light .site-header{background:#fffaf0ed;border-bottom-color:#dccba8}
+html.theme-light .brand{color:#172c38}
+html.theme-light .brand:hover .brand-name{color:#674514}
+html.theme-light .brand-accent,html.theme-light .hero-copy h1 em{color:#956419}
+html.theme-light .header-kicker{color:#66747b}
+html.theme-light .language,html.theme-light .theme-toggle{background:#fff8e8;border-color:#d4ae64;color:#624716}
+html.theme-light .language:hover,html.theme-light .theme-toggle:hover{background:#f7e9c9;border-color:#a87526}
+html.theme-light .eyebrow,html.theme-light .section-index,html.theme-light .question-label span{color:#986619}
+html.theme-light .signal{background:#b9862c}
+html.theme-light .hero-copy p,html.theme-light .stage-hero p,html.theme-light .section-head p{color:#5a6c75}
+html.theme-light .start-button{background:#b98225;color:#fff;border-color:#9d6d1c;box-shadow:0 5px 17px #9d6d1c35}
+html.theme-light .start-button:hover{background:#946517}
+html.theme-light .orbit{background:radial-gradient(circle,#fffcf4 0,#f4ead7 34%,#e9e9e1 67%,transparent 73%);box-shadow:inset 0 0 45px #bd9c5926}
+html.theme-light .orbit:before{border-color:#b7a685;box-shadow:none}
+html.theme-light .orbit:after{border-color:#b8a780}
+html.theme-light .orbit-track-outer{border-color:#c7bc9d}
+html.theme-light .orbit-track-inner{border-color:#c79b48;box-shadow:0 0 16px #d9b66b8a,inset 0 0 12px #d9b66b75}
+html.theme-light .orbit-dashes{border-color:#bbad8a}
+html.theme-light .orbit-center{background:radial-gradient(circle at 35% 25%,#fffdf8,#eee6d5);border-color:#b98d3c;box-shadow:0 0 22px #be934c4d,inset 0 0 20px #e3ce9f88}
+html.theme-light .center-icon{color:#a27220;text-shadow:none}
+html.theme-light .center-ar{color:#1d3038}
+html.theme-light .center-caption{color:#586d73}
+html.theme-light .orbit-node{background:linear-gradient(155deg,#fffdf9,#f2f0e9);border-color:var(--node-color);color:#1e303b;box-shadow:0 4px 16px #5c6d6a21}
+html.theme-light .orbit-node:hover{box-shadow:0 6px 24px #8a6c3d55}
+html.theme-light .node-number,html.theme-light .node-glyph{color:#34576a}
+html.theme-light .home-bottom,html.theme-light footer{color:#62747c}
+html.theme-light .bottom-line{background:linear-gradient(90deg,transparent,#c2a668,transparent)}
+html.theme-light .motion-toggle,html.theme-light .back-button,html.theme-light .stage-nav button,html.theme-light .rail-button{background:#fffaf0;border-color:#d3bd91;color:#314855}
+html.theme-light .motion-toggle:hover,html.theme-light .back-button:hover,html.theme-light .stage-nav button:hover,html.theme-light .rail-button:hover{background:#f5e8ce;border-color:#a87829}
+html.theme-light .rail-button span{color:#9b691d}
+html.theme-light .stage-hero{background:linear-gradient(120deg,#fffaf0,#eee6d5);border-color:#d7c59f;box-shadow:0 8px 25px #6c57301a}
+html.theme-light .stage-pill{background:#f6e9c8;border-color:#caa557;color:#775017}
+html.theme-light .stage-hero-glyph{color:#a8762a}
+html.theme-light .questions-panel{background:linear-gradient(155deg,#f9efd9,#eee5d4);border-color:#d2b678;border-inline-start-color:#b8842f;box-shadow:0 8px 25px #6c57301a}
+html.theme-light .recommendation-panel{background:#fffdf8;border-color:#d9d4c7;box-shadow:0 8px 25px #43515c17}
+html.theme-light .questions-panel .section-head p{color:#526671}
+html.theme-light .questions-panel .section-index,html.theme-light .questions-panel .question-label span{color:#916014}
+html.theme-light .questions-panel .option{background:#fffaf0;border-color:#cfbf9f;color:#273e49}
+html.theme-light .questions-panel .option:hover{background:#f8eacb;border-color:#a87925}
+html.theme-light .questions-panel .option.selected{background:#edcf8a;border:2px solid #9f701f;color:#2b2c28;box-shadow:0 0 0 3px #d5a13c35}
+html.theme-light .questions-panel .option.selected:after{background:#7e5718;color:#fff}
+html.theme-light .advanced-toggle{background:#f4e2ba;border-color:#bb914d;color:#493923}
+html.theme-light .advanced-toggle:hover{background:#eed49e}
+html.theme-light .advanced-questions{border-top-color:#c9ac74}
+html.theme-light .recommend-card{background:linear-gradient(155deg,#fff8e8,#f8f3e9);border-color:#c9aa6a;box-shadow:none}
+html.theme-light .rec-kicker,html.theme-light .rec-id,html.theme-light .rec-link{color:#805715}
+html.theme-light .recommend-card p,html.theme-light .reason-list{color:#394e58}
+html.theme-light .settings-summary{background:#f7f5ef;border-color:#d5cfbf}
+html.theme-light .settings-summary strong{color:#765216}
+html.theme-light .settings-summary dt{color:#65757c}
+html.theme-light .settings-summary dd{color:#233844}
+html.theme-light .code-card{background:#172631;border-color:#adad9f}
+html.theme-light .code-switch{background:#e7e4dc;border-bottom-color:#c8c2b7}
+html.theme-light .code-switch button{background:#faf8f2;color:#405058;border-color:#c0bdaf}
+html.theme-light .code-switch button.active{background:#bd8a31;color:#fff;border-color:#8c641f;box-shadow:0 0 0 2px #bd8a3133}
+html.theme-light .install-line{background:#f4f0e6;border-bottom-color:#c8c2b7;color:#47535a}
+html.theme-light .install-line code{color:#604716}
+html.theme-light .code-note{color:#63747b}
+html.theme-light .embedding-stage iframe{background:#fffdf8}
+html.theme-light footer{border-top-color:#dbcfb9}
+html.theme-light footer span:first-child{color:#263e48}
+@media(max-width:520px){.header-actions{gap:6px}.header-kicker{display:none}.theme-toggle{width:36px;min-width:36px;padding:6px;font-size:18px}.theme-text{display:none}.brand{font-size:16px}.brand-mark,.brand-mark img{width:30px;height:30px}.language{min-width:56px;padding:7px 5px}}
+
+/* More visible gold, with a distinct pictogram for every stage. */
+.brand-name{color:#fff4d7}.brand-accent{color:#f1be58}
+.language,.motion-toggle,.back-button,.stage-nav button{border-color:#826942}
+.language:hover,.motion-toggle:hover,.back-button:hover,.stage-nav button:hover{border-color:#e8b95d;color:#ffdf96}
+.orbit:before{border-color:#bd914d80;box-shadow:0 0 23px #be8b3a39,inset 0 0 30px #bb8d3d24}
+.orbit:after,.orbit-track-outer,.orbit-dashes{border-color:#c69a5580}
+.orbit-center{background:radial-gradient(circle at 35% 24%,#574428,#243342 54%,#10283d 83%)}
+.center-icon{color:#f4c76b;text-shadow:0 0 20px #edb4516b}
+.center-ar{color:#fff2cb}
+.orbit-node{border-width:1.5px;background:linear-gradient(155deg,#3a3429,#172e3b 68%,#102438);box-shadow:0 0 16px color-mix(in srgb,var(--node-color) 30%,transparent),inset 0 0 20px #c7963512}
+.orbit-node:hover{box-shadow:0 0 28px color-mix(in srgb,var(--node-color) 63%,transparent),inset 0 0 24px #e4ad3d26}
+.node-number{color:#f3c870}
+.node-glyph{display:grid;place-items:center;width:38px;height:38px;flex:none;margin:4px auto 1px;border:1px solid #d5a65088;border-radius:11px;background:#d4a0441e;color:#f5ce7e;text-shadow:none}
+.stage-icon{width:25px;height:25px;display:block;flex:none}
+.node-label{color:#fff6e5}
+.stage-hero{border-color:#8b7047;background:linear-gradient(120deg,#3b392f,#173345 56%,#0e2034)}
+.stage-hero-glyph{display:grid;place-items:center;width:96px;height:96px;border:1px solid #b88a43;border-radius:24px;background:#d9a23e1c;color:#f1c878;box-shadow:0 0 35px #d9a23e2a}
+.stage-hero-glyph .stage-icon{width:58px;height:58px}
+.stage-toolbar,.stage-counter{color:#e8c47f}
+.recommend-card h3{color:#fff5dc}
+.questions-panel .option:hover{border-color:#ebc775;background:#3d4b44}
+.rec-link:hover{color:#ffdea0}
+.copy-code{border-color:#a67c3c;color:#f9d991}
+.rail-button span{color:#f1c66e}
+html.theme-light .brand-name{color:#253640}
+html.theme-light .brand-accent{color:#956419}
+html.theme-light .orbit:before{border-color:#c5a369;box-shadow:0 0 17px #bd945044}
+html.theme-light .orbit:after,html.theme-light .orbit-track-outer,html.theme-light .orbit-dashes{border-color:#c2a56f}
+html.theme-light .orbit-center{background:radial-gradient(circle at 35% 24%,#fff2cb,#f1e6d2 75%)}
+html.theme-light .center-icon{color:#a5721e;text-shadow:none}
+html.theme-light .center-ar{color:#594319}
+html.theme-light .orbit-node{background:linear-gradient(155deg,#fff8e9,#eee4d1);border-color:var(--node-color);box-shadow:0 4px 17px #92713a3d}
+html.theme-light .node-number{color:#805715}
+html.theme-light .node-glyph{background:#f2dfb5;border-color:#c79d52;color:#805817}
+html.theme-light .node-label{color:#273b43}
+html.theme-light .stage-hero{background:linear-gradient(120deg,#fff1ce,#f3ead7 55%,#e7e6df);border-color:#bd9d62}
+html.theme-light .stage-hero-glyph{background:#f2deb1;border-color:#bb8d3c;color:#815919;box-shadow:0 8px 25px #a67f3a33}
+html.theme-light .stage-toolbar{color:#7f601f}
+html.theme-light .recommend-card h3{color:#273b43}
+html.theme-light .questions-panel .option:hover{background:#f7e4b9}
+html.theme-light .copy-code{background:#53432d;border-color:#aa884e;color:#ffe3a5}
+@media(max-width:800px){.node-glyph{width:31px;height:31px;border-radius:9px;margin:2px auto 0}.node-glyph .stage-icon{width:21px;height:21px}.stage-hero-glyph{width:72px;height:72px;border-radius:18px}.stage-hero-glyph .stage-icon{width:43px;height:43px}}
+@media(max-width:520px){.node-glyph{width:25px;height:25px;border-radius:7px;margin:1px auto 0}.node-glyph .stage-icon{width:17px;height:17px}.node-label{font-size:7.5px}.stage-hero-glyph{width:55px;height:55px;border-radius:14px}.stage-hero-glyph .stage-icon{width:32px;height:32px}}
+
+/* The orbit's background lines alone use gold; stage cards keep their cool colors. */
+.orbit-center{background:radial-gradient(circle at 34% 25%,#205267,#10283d 75%);border-color:#76d3c4;box-shadow:0 0 25px #4eaea54d,inset 0 0 25px #4eaea533}
+.orbit-center .center-icon{color:#91e7d9;text-shadow:none}
+.orbit-center .center-ar{color:#f1f8f8}
+.orbit-node{background:linear-gradient(160deg,#173549,#102438 80%);box-shadow:0 0 11px color-mix(in srgb,var(--node-color) 24%,transparent);border-width:1.5px}
+.orbit-node:hover{box-shadow:0 0 20px color-mix(in srgb,var(--node-color) 50%,transparent)}
+.orbit-node .node-number{color:var(--node-color)}
+.orbit-node .node-glyph{border-color:color-mix(in srgb,var(--node-color) 55%,transparent);background:color-mix(in srgb,var(--node-color) 14%,#102438);color:var(--node-color)}
+.orbit-node .node-label{color:#f1f8f8}
+html.theme-light .orbit{background:radial-gradient(circle,#fffdf9 0,#ecf1ed 34%,#e8edeb 67%,transparent 73%)}
+html.theme-light .orbit-center{background:radial-gradient(circle at 35% 25%,#fffdf8,#e6eeeb);border-color:#7cb9b2;box-shadow:0 0 18px #5a9c9440,inset 0 0 20px #b8d8d177}
+html.theme-light .orbit-center .center-icon{color:#287d78;text-shadow:none}
+html.theme-light .orbit-center .center-ar{color:#1d3038}
+html.theme-light .orbit-node{background:linear-gradient(155deg,#fffdf9,#eef4f3);border-color:var(--node-color);box-shadow:0 4px 17px #4b6e6b2b}
+html.theme-light .orbit-node:hover{box-shadow:0 6px 22px color-mix(in srgb,var(--node-color) 40%,transparent)}
+html.theme-light .orbit-node .node-number{color:#336579}
+html.theme-light .orbit-node .node-glyph{background:#e5f2f0;border-color:#a5cfcc;color:#306e7c}
+html.theme-light .orbit-node .node-label{color:#273b43}

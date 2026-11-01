@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1727">
+  <meta name="description" content="Khamis.AI: explore AI mathematics, tools, and interactive RAG learning in Arabic and English.">
+  <link rel="icon" href="logo.svg?v=brand-3" type="image/svg+xml">
+  <title>Khamis.AI · RAG Tool Recommender</title>
+  <script>try{if(JSON.parse(localStorage.getItem('embedpilot-explorer')||'{}').theme==='light')document.documentElement.classList.add('theme-light')}catch{}</script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="appearance.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <button class="brand" id="homeBrand" type="button" aria-label="Khamis.AI home"><span class="brand-mark"><img src="logo.svg?v=brand-3" alt=""></span><span class="brand-name">Khamis<span class="brand-accent">.AI</span></span></button>
+    <div class="header-actions"><nav class="site-nav" aria-label="Main navigation" hidden style="display:none"><button id="navStages" class="nav-tab" type="button">Tool Recommender</button><button id="navEcosystems" class="nav-tab" type="button">Ecosystems</button><button id="navRepos" class="nav-tab" type="button">Repos</button><button id="navCourses" class="nav-tab" type="button">Courses</button><button id="navCompanies" class="nav-tab" type="button">AI Companies</button></nav><span class="header-kicker" id="headerKicker">مسارك لفهم الذكاء الاصطناعي</span><button id="themeToggle" class="theme-toggle" type="button" aria-pressed="true">☀ الوضع الفاتح</button><button id="language" class="language" type="button" aria-label="Switch language">EN <span>↗</span></button></div>
+  </header>
+  <main>
+    <section id="home" class="map-home" hidden><div id="routeMap" class="route-map" hidden></div></section>
+    <section id="stagesHome" class="home-view" hidden>
+      <div class="hero-copy"><div class="eyebrow"><span class="signal"></span><span id="eyebrow">دليل RAG التفاعلي</span></div><h1 id="heroTitle">ابنِ نظام <em>RAG</em> خطوة بخطوة</h1><p id="heroIntro">اختر مرحلة من الدائرة، أجب عن أسئلة بسيطة، واعرف الأداة المناسبة لك.</p><button id="startButton" class="start-button" type="button">ابدأ من المرحلة الأولى <span>←</span></button></div>
+      <div class="orbit-shell"><div class="orbit" id="orbit"><div class="orbit-track orbit-track-outer"></div><div class="orbit-track orbit-track-inner"></div><div class="orbit-dashes"></div><div class="orbit-center"><div class="center-icon">✦</div><div class="center-ar" id="centerTitle">مراحل RAG</div><div class="center-caption" id="centerCaption">اضغط على مرحلة للاستكشاف</div></div><div id="orbitNodes"></div></div></div>
+      <div class="stage-rail" id="stageRail"></div>
+      <div class="home-bottom"><span id="homeBottom">من المصدر إلى التقييم، خطوة بخطوة</span><span class="bottom-line"></span><button type="button" id="motionToggle" class="motion-toggle" aria-pressed="true">⏸ إيقاف الحركة</button></div>
+    </section>
+    <section id="simulationView" class="sim-view" hidden></section>
+    <section id="ecosystemsView" class="ecosystems-view" hidden></section>
+    <section id="reposView" class="resource-view" hidden></section>
+    <section id="coursesView" class="resource-view" hidden></section>
+    <section id="aiCompaniesView" class="resource-view" hidden></section>
+    <section id="mathSkillsView" class="math-skills-view" hidden></section>
+    <section id="complexityView" class="complexity-view" hidden></section>
+    <section id="stageView" class="stage-view" hidden>
+      <div class="stage-toolbar"><button id="backHome" class="back-button" type="button"><span>↩</span><span id="backText">العودة إلى المراحل</span></button><span id="stageCounter">01 / 10</span></div>
+      <div class="stage-hero"><div class="stage-hero-copy"><span class="stage-pill" id="stagePill">المرحلة 01</span><h1 id="stageTitle"></h1><p id="stageIntro"></p></div><div class="stage-hero-glyph" id="stageGlyph"></div></div>
+      <div id="guidedStage" class="guided-layout"><section class="questions-panel"><div class="section-head"><span class="section-index">01 / DISCOVER</span><h2 id="questionsTitle">حدّد احتياجاتك</h2><p id="questionsIntro">اختيارات قليلة توجّهك إلى نقطة البداية المناسبة.</p></div><div id="questions"></div></section><section class="recommendation-panel"><div class="section-head"><span class="section-index">02 / RECOMMEND</span><h2 id="recommendTitle">الترشيح المناسب</h2><p id="recommendIntro">يتحدّث فورًا عند تغيير اختياراتك.</p></div><div id="recommendation"></div></section></div>
+      <section id="embeddingStage" class="embedding-stage" hidden><iframe id="embeddingFrame" title="Embedding advisor" loading="lazy" src="embedding-advisor.html"></iframe></section>
+      <nav class="stage-nav"><button id="previousStage" type="button"></button><button id="nextStage" type="button"></button></nav>
+    </section>
+  </main>
+  <footer><span>Khamis<span class="brand-accent">.AI</span></span><span id="footerText">تعلّم الذكاء الاصطناعي بصريًا، خطوة بخطوة</span></footer>
+  <script src="stubs.js"></script>
+  <script src="code-examples.js"></script>
+  <script src="explorer.js"></script>
+</body>
+</html>
+
+
+
+
+

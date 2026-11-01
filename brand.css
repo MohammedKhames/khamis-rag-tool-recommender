@@ -1,0 +1,48 @@
+/* Khamis.AI identity inside the preserved embedding advisor. */
+.brand{font-size:20px;white-space:nowrap}.brand span:last-child{color:#82dfd3}
+.logo{width:39px;height:39px;background:transparent url('logo.svg?v=brand-3') center/contain no-repeat;box-shadow:none}.logo svg{display:none}
+.hero .eyebrow{color:#89e3d3}.status:before{background:#69d9c7}
+.journey-icon{background:#194c53!important;color:#8ee7d4!important}
+.model .badge,.model[data-model="bge"] .badge{background:#174b54!important;color:#9be9d9!important}
+.model-icon,.model-icon.blue{background:#194853;color:#91e6d4}.model-visual,.model[data-model="bge"] .model-visual{background:#153b4a!important}
+.primary{background:#7de0ce;color:#0a2830}.primary:hover{background:#a3f0e0}
+.selected-text,.spark,.tab.active{color:#7ce0cf}.tab.active{border-color:#7ce0cf}
+.count{background:#16464d;color:#91e7d8}.reason{background:#153943;border-color:#2d6e70}.reason strong{color:#b7f1e4}
+.download{background:#17414d;color:#c4f4e8;border-color:#367a79}.mini-brand{color:#c6ece6}
+@media(max-width:700px){.brand{font-size:17px}.logo{width:33px;height:33px}}
+
+/* Stage 4 uses the shared stage heading, so show only the advisor workspace here. */
+.embedded body{background:#0b1727}
+.embedded header,.embedded .hero,.embedded .journey,.embedded footer,.embedded .usage-note{display:none!important}
+.embedded main{max-width:none;padding:0;margin:0}
+.embedded .workspace{grid-template-columns:minmax(280px,.93fr) minmax(330px,1.07fr);gap:22px;align-items:start}
+.embedded .settings,.embedded #results{background:#102339;border:1px solid #345269;border-radius:18px;padding:27px;box-shadow:0 8px 24px #0002;min-width:0}
+.embedded .settings{border-top:1px solid #345269}
+.embedded .panel-title,.embedded .results-title h2{font-size:21px;color:#f1f8f8}
+.embedded .settings .hint,.embedded .results-title .small{color:#a9bdc9}
+.embedded .model{background:#142b42}
+.embedded .model.selected{border-color:#7ce0cc}
+.embedded .reason{margin-bottom:16px}
+@media(max-width:800px){.embedded .workspace{grid-template-columns:1fr}.embedded .settings,.embedded #results{padding:20px}}
+
+/* A distinct settings surface, with the recommendation area left in navy. */
+.embedded .settings{background:linear-gradient(155deg,#1b5051 0%,#164047 54%,#12313f 100%);border-color:#65b6a8;border-inline-start:4px solid #87e4ce;box-shadow:0 12px 30px #031b2280}
+.embedded .settings .panel-title{color:#f3fffb}.embedded .settings .hint{color:#c6e5e1}.embedded .settings .divider{background:#61938e88}
+.embedded .settings .label{color:#eefbf8}.embedded .settings .label small{color:#a8d7d0}
+.embedded .settings select,.embedded .settings .choice,.embedded .settings .segments{background:#102e39;border-color:#4c8684;color:#e4f6f2}
+.embedded .settings .segments button{color:#c0dcd9}.embedded .settings .segments button.active,.embedded .settings .choice.active{background:#22635f;border-color:#8be2d1;color:#f6fffc;box-shadow:none}
+.embedded .settings .primary{background:#a1efdc;color:#082e32}.embedded .settings .primary:hover{background:#c2fae9}
+.embedded .settings .privacy,.embedded .settings .reset{color:#c7e4df}
+
+/* Strong, readable selection states for the preserved model advisor. */
+.embedded .settings .segments button.active{border:2px solid #b3f6e2;background:#2d746c;color:#fff;box-shadow:0 0 0 3px #8debd12e;font-weight:800}
+.embedded .settings .choice{position:relative;padding-inline-end:42px}
+.embedded .settings .choice.active{border:2px solid #b3f6e2;background:#2b6b65;box-shadow:0 0 0 3px #8debd12e;font-weight:800}
+.embedded .settings .choice.active:after{content:'✓';position:absolute;inset-inline-end:13px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#baf8e5;color:#123b39;font-weight:900}
+.embedded .settings select{border-width:2px;background:#102e39;color:#fff;font-weight:700}.embedded .settings select:focus-visible{outline:3px solid #b7f6e3}
+.embedded .model.selected{border:3px solid #a3f5db;background:linear-gradient(155deg,#215a5c,#173e51);box-shadow:0 0 0 4px #8eead02e,0 16px 32px #031a2580}
+.embedded .model.selected:after{position:absolute;top:9px;inset-inline-end:9px;padding:5px 8px;background:#baf8e5;color:#0c403b;border-radius:7px;font-size:10px;font-weight:800;line-height:1.2;box-shadow:0 4px 12px #0004}
+.embedded[lang="ar"] .model.selected:after{content:'✓ الموديل المختار'}
+.embedded[lang="en"] .model.selected:after{content:'✓ Selected model'}
+.embedded .model.selected .selected-text{color:#b4f8e3;font-weight:800}
+.embedded .tab.active{color:#b3f6e2;border-bottom:3px solid #9cebd5;font-weight:800}
