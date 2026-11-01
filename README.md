@@ -14,6 +14,8 @@ An interactive 10-stage RAG wheel, guided recommendation pages with ready-to-run
 
 <img width="1181" height="832" alt="image" src="https://github.com/user-attachments/assets/25714648-d87f-4e9c-be4b-b683e57bef41" />
 
+<img width="1044" height="845" alt="image" src="https://github.com/user-attachments/assets/0dc2899b-1085-419b-8ff1-b8ec11e048c9" />
+
 ---
 
 ## What it is
